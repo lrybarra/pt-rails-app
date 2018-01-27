@@ -1,0 +1,8 @@
+<h2>New Client</h2>
+
+<%= form_for :client, url: clients_path do |f| %>
+  Name: <%= f.text_field :name  %><br />
+  Weight: <%= f.text_field :weight  %><br />
+  Start: <%= f.date_field :start  %><br />
+  <%= f.submit %>
+<% end %>
